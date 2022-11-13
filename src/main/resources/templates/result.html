@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOT Site de CEP</title>
+</head>
+<body>
+<form action="/result" method="get">
+<p th:text="'CEP: ' + ${address.cep}" />
+<p th:text="'Código IBGE: ' + ${address.cdIbge}" />
+<p th:text="'Logradouro: ' + ${address.logradouro}" />
+<p th:text="'Complemento: ' + ${address.complemento}" />
+<p th:text="'Bairro: ' + ${address.bairro}" />
+<p th:text="'Localidade: ' + ${address.localidade}" />
+<p th:text="'Estado: ' + ${address.estado}" />
+</form>
+<button onclick="location.href='/index.html'">VOLTAR</button>
+</body>
+</html>
